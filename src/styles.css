@@ -1,0 +1,123 @@
+:root {
+    --main-bg-color: #1f1f1f;
+    --display-bg-color: #363636;
+    --buttons-ng-color: #35383b;
+    --button-width: 18%;
+    --buttton-height: 20%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: var(--main-bg-color);
+}
+
+.container {
+    padding: 2%;
+    height: 97%;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.display {
+    display: flex;
+    background-color: var(--display-bg-color);
+    grid-row: 0;
+    grid-column: 0;
+    border-radius: 20px;
+    justify-content: end;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.button-container {
+    margin-top: 8px;
+    background-color: var(--buttons-ng-color);
+    border-radius: 20px;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: var(--buttton-height) var(--buttton-height) var(--buttton-height) var(--buttton-height);
+    grid-template-rows: var(--button-width) var(--button-width) var(--button-width) var(--button-width) var(--button-width);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 5% 0;
+}
+
+input {
+    position: relative;
+    outline: none;
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+    background: none;
+    border: 0;
+    font-size: x-large;
+    font-weight: 600;
+    width: fit-content;
+    justify-self: end;
+}
+
+.plus-btn {
+    grid-row: 2 /span 2;
+    grid-column: 4;
+}
+
+.equals-btn {
+    grid-row: 4 / span 2;
+    grid-column: 4;
+}
+
+.zero-btn {
+    grid-row: 5;
+    grid-column: 1 /span 2;
+}
+
+button {
+    border-radius: 5px;
+    border: 0;
+    background-color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 800;
+    font-size: x-large;
+
+    box-shadow: -1px 4px 12px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 4px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 4px 12px 0px rgba(0,0,0,0.75);
+    transition: all;
+
+    transition-duration: 200ms;
+
+}
+button:active{
+    border-color: #000;
+    background-color: rgb(70, 64, 73);
+    transition-delay:100ms;
+    transition-duration: 200ms;
+    transition: all;
+}
+
+.unclick {
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    background: none;
+    z-index: 4;
+}
