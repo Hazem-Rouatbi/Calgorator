@@ -7,8 +7,8 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "calc",
-    "version": "0.0.0"
+    "productName": "calgolator",
+    "version": "1.0"
   },
   "tauri": {
     "allowlist": {
