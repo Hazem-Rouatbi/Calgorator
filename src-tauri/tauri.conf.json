@@ -7,7 +7,11 @@
     "withGlobalTauri": true
   },
   "package": {
+<<<<<<< HEAD
     "productName": "calgolator",
+=======
+    "productName": "calc",
+>>>>>>> 2bd3f9fddf937b3b893272dc2eadcfa249ba6e1d
     "version": "1.0"
   },
   "tauri": {
